@@ -574,6 +574,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Thruster 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5058066061422904414, guid: d430428bea73a55448ff0c08a0037231,
+        type: 3}
+      propertyPath: m_ConnectedBody
+      value: 
+      objectReference: {fileID: 1702426165}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d430428bea73a55448ff0c08a0037231, type: 3}
 --- !u!4 &1208039892 stripped
@@ -646,6 +651,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1702426163}
     m_Modifications:
+    - target: {fileID: 5058066061422904401, guid: d430428bea73a55448ff0c08a0037231,
+        type: 3}
+      propertyPath: IsFirst
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5058066061422904412, guid: d430428bea73a55448ff0c08a0037231,
         type: 3}
       propertyPath: m_RootOrder
