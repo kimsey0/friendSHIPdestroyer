@@ -511,8 +511,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5058066061422904401, guid: d430428bea73a55448ff0c08a0037231,
         type: 3}
+      propertyPath: IsFirst
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058066061422904401, guid: d430428bea73a55448ff0c08a0037231,
+        type: 3}
+      propertyPath: Rigidbody
+      value: 
+      objectReference: {fileID: 1702426165}
+    - target: {fileID: 5058066061422904401, guid: d430428bea73a55448ff0c08a0037231,
+        type: 3}
       propertyPath: ThrustForce
-      value: 1000
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058066061422904401, guid: d430428bea73a55448ff0c08a0037231,
+        type: 3}
+      propertyPath: ThrustInputAxisName
+      value: Thrust2
       objectReference: {fileID: 0}
     - target: {fileID: 5058066061422904401, guid: d430428bea73a55448ff0c08a0037231,
         type: 3}
@@ -578,6 +593,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Thruster 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058066061422904413, guid: d430428bea73a55448ff0c08a0037231,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5058066061422904414, guid: d430428bea73a55448ff0c08a0037231,
         type: 3}
@@ -658,14 +678,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5058066061422904401, guid: d430428bea73a55448ff0c08a0037231,
         type: 3}
-      propertyPath: IsFirst
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5058066061422904401, guid: d430428bea73a55448ff0c08a0037231,
-        type: 3}
-      propertyPath: ThrustForce
-      value: 1000
-      objectReference: {fileID: 0}
+      propertyPath: Rigidbody
+      value: 
+      objectReference: {fileID: 1702426165}
     - target: {fileID: 5058066061422904412, guid: d430428bea73a55448ff0c08a0037231,
         type: 3}
       propertyPath: m_RootOrder
@@ -726,10 +741,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Thruster 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5058066061422904414, guid: d430428bea73a55448ff0c08a0037231,
-        type: 3}
-      propertyPath: m_ConnectedBody
-      value: 
-      objectReference: {fileID: 1702426165}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d430428bea73a55448ff0c08a0037231, type: 3}
