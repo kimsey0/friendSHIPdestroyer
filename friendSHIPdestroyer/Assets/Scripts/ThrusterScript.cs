@@ -9,6 +9,7 @@ public class ThrusterScript : MonoBehaviour
     public string ThrustInputAxisName = "Thrust1";
     public InputActionAsset InputActionAsset;
     public float RotationForce = 1;
+    public float ThrustForce = 1000;
     private Rigidbody _rigidbody;
     private @Input _input;
 
@@ -26,6 +27,9 @@ public class ThrusterScript : MonoBehaviour
         var rotationInput = IsFirst ? _input.Thruster1.Rotation : _input.Thruster2.Rotation;
         var rotationForce = rotationInput.ReadValue<float>() * RotationForce;
         _rigidbody.AddForce(transform.right * rotationForce);
-        
+
+        var thrustInput = IsFirst ? _input.Thruster1.Thrust : _input.Thruster2.Thrust;
+        var thrustForce = thrustInput.ReadValue<float>() * ThrustForce;
+        _rigidbody.AddForce(transform.up * thrustForce);
     }
 }
