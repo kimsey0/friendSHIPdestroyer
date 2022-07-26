@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5058066061422904413
+--- !u!1 &2154776164061495057
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,99 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5058066061422904412}
-  - component: {fileID: 5058066061422904401}
+  - component: {fileID: 2154776164061495058}
+  - component: {fileID: 2154776164061495060}
+  - component: {fileID: 2154776164061495059}
   m_Layer: 0
-  m_Name: Thruster
+  m_Name: Thruster Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5058066061422904412
+--- !u!4 &2154776164061495058
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5058066061422904413}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4, y: -0.4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5058066062344878476}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5058066061422904401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5058066061422904413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 666eb72ce50a14a4a906fbcc68cda57d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsFirst: 1
-  ThrustInputAxisName: Thrust1
-  InputActionAsset: {fileID: -944628639613478452, guid: fb76f65eaa8bd1b408d22244518a2054,
-    type: 3}
-  RotationSpeed: 100
-  ThrustForce: 10000
-  Rigidbody: {fileID: 0}
---- !u!1 &5058066062344878477
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5058066062344878476}
-  - component: {fileID: 5058066062344878465}
-  - component: {fileID: 5058066062344878478}
-  - component: {fileID: 5058066062344878479}
-  m_Layer: 0
-  m_Name: Thruster 1 Model
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5058066062344878476
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5058066062344878477}
-  m_LocalRotation: {x: -0, y: -0, z: -0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: -0.2, y: -0.2, z: 0}
-  m_LocalScale: {x: 0.20000002, y: 0.20000002, z: 0.2}
+  m_GameObject: {fileID: 2154776164061495057}
+  m_LocalRotation: {x: 0.29315254, y: -0.5938583, z: 0.24598415, w: 0.70773286}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 13, y: 13, z: 13}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5058066061422904412}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
---- !u!33 &5058066062344878465
+  m_LocalEulerAnglesHint: {x: 45, y: -80, z: 0}
+--- !u!33 &2154776164061495060
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5058066062344878477}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &5058066062344878478
+  m_GameObject: {fileID: 2154776164061495057}
+  m_Mesh: {fileID: 2534964839176971238, guid: c9f72a059f4409441b9b06457c4d69a4, type: 3}
+--- !u!23 &2154776164061495059
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5058066062344878477}
+  m_GameObject: {fileID: 2154776164061495057}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -136,17 +83,55 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &5058066062344878479
-CapsuleCollider:
+--- !u!1 &5058066061422904413
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5058066062344878477}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5058066061422904412}
+  - component: {fileID: 5058066061422904401}
+  m_Layer: 0
+  m_Name: Thruster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5058066061422904412
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5058066061422904413}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2154776164061495058}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5058066061422904401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5058066061422904413}
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 666eb72ce50a14a4a906fbcc68cda57d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsFirst: 1
+  ThrustInputAxisName: Thrust1
+  InputActionAsset: {fileID: -944628639613478452, guid: fb76f65eaa8bd1b408d22244518a2054,
+    type: 3}
+  RotationSpeed: 100
+  ThrustForce: 10000
+  Rigidbody: {fileID: 0}
