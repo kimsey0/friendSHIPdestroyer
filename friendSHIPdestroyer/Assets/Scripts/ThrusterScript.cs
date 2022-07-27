@@ -10,6 +10,7 @@ public class ThrusterScript : MonoBehaviour
     public float RotationSpeed = 1;
     public float ThrustForce = 1000;
     public Rigidbody Rigidbody;
+    public ParticleSystem Fire;
     private @Input _input;
 
     // Start is called before the first frame update
@@ -30,6 +31,9 @@ public class ThrusterScript : MonoBehaviour
         var thrustForce = thrustInput.ReadValue<float>() * ThrustForce * Time.deltaTime;
         var direction = transform.up + transform.right;
         Rigidbody.AddForceAtPosition(direction * thrustForce, transform.position);
+#pragma warning disable CS0618 // Type or member is obsolete
+        Fire.enableEmission = thrustForce > 0;
+#pragma warning restore CS0618 // Type or member is obsolete
     }
 
     private float CalculateNewRotation(InputAction rotationInput)
